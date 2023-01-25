@@ -26,7 +26,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("s")) {
                     for (String string : searches) {
                         if(string.contains(parameters[1])){
-                            contains += ", " + string;
+                            contains = contains + " " + string;
                         }
                     }
                     return contains;
